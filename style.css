@@ -1,0 +1,231 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #9d9ce0, #E1F5FE); /* Fondo degradado claro */
+    overflow: auto;
+    color: #000000; /* Color del texto */
+}
+
+header {
+    background: linear-gradient(to right, #745abb, #1c0755); /* Color del encabezado */
+    color: #fff7f7;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.178);
+}
+
+nav {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #c29feb; /* Color azul claro */
+    text-decoration: none;
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #606186; /* Color azul más oscuro al pasar el ratón */
+}
+
+main {
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #f0f0f0; 
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a nuevas filas si no hay suficiente espacio */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.card {
+    width: 18rem; /* El ancho de cada tarjeta */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total de la tarjeta */
+    border: none;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; 
+    background-color: #ffffff; /* Color de fondo de las tarjetas */
+}
+
+.card-img-top {
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+
+.card-title {
+    font-weight: bold; 
+    color: #5821b1; /* Color azul claro */
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.card {
+    margin: 10px; 
+    flex: 1; 
+    cursor: pointer;
+}
+
+.card:hover {
+    flex: 3;
+    transform: scale(1.05); 
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #4e00cc; /* Color azul claro */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #750099; /* Color azul más oscuro al pasar el ratón */
+    transform: scale(1.1); 
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #1a0650; /* Color azul claro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.promo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+.promo {
+    background-color: #f3e1fe; /* Color de fondo claro para las tarjetas */
+    border: 1px solid #5d2574; /* Borde para las tarjetas */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para las tarjetas */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px; /* Espacio adicional alrededor de cada tarjeta */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del contenedor */
+}
+
+.promo-main {
+    background-color: #745abb; /* Color de fondo azul claro para la tarjeta principal */
+    color: #ffffff; /* Color de texto oscuro para la tarjeta principal */
+    width: calc(100% - 40px); /* Ancho del rectángulo, ajustado para el padding */
+    padding: 10px; /* Espaciado interno menor para reducir la altura */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    border: none; /* Elimina el borde */
+    box-shadow: none; /* Elimina la sombra */
+}
+
+.promo-main a {
+    color: #333; /* Color de texto oscuro para el enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.promo-main h2, .promo-main p {
+    margin: 0; /* Elimina márgenes para evitar espacio adicional */
+}
+
+.promo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+section {
+    margin-bottom: 20px; /* Espaciado entre secciones */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para las secciones */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cover {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 40px;
+    text-align: center; /* Centrar el texto */
+    border-radius: 12px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.cover h2 {
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    color: #1c0755; /* Color del texto azul claro */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+strong{
+    color: #1c0755;
+}
+.image-container {
+    display: flex; /* Usar flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.profile-image {
+    width: 170px; /* Ancho de la imagen */
+    height: 150px; /* Altura automática para mantener la proporción */
+    border-radius: 50%; /* Imagen circular */
+    border: 5px solid #684ec5; /* Borde alrededor de la imagen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+.profile-image:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+.cover p {
+    font-size: 1.2em; /* Tamaño de fuente para los párrafos */
+    color: #000000; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 10px 0; /* Espaciado vertical entre párrafos */
+    max-width: 600px; /* Ancho máximo para los párrafos */
+    margin-left: auto; /* Centrar el texto */
+    margin-right: auto; /* Centrar el texto */
+}
